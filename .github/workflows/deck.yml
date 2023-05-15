@@ -1,0 +1,22 @@
+name: Validate and Import OpenAPI on Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup Deck
+      uses: kong/setup-deck@v1.2.2
+      with: 
+        deck-version: 1.8.0
+        
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: Run Deck
+      run: deck ping --kong-addr http://172.16.22.77:8001 --timeout 20
