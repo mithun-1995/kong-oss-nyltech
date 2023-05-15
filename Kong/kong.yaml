@@ -1,0 +1,291 @@
+{
+	"_format_version": "1.1",
+	"services": [
+		{
+			"name": "Swagger_Petstore_-_OpenAPI_3.0",
+			"protocol": "https",
+			"host": "petstore3.swagger.io",
+			"port": 443,
+			"path": "/api/v3",
+			"plugins": [],
+			"routes": [
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "updatePet",
+					"methods": [
+						"PUT"
+					],
+					"paths": [
+						"/pet$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "addPet",
+					"methods": [
+						"POST"
+					],
+					"paths": [
+						"/pet$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "findPetsByStatus",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/pet/findByStatus$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "findPetsByTags",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/pet/findByTags$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "getPetById",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/pet/(?<petId>[^/]+)$"
+					],
+					"strip_path": false,
+					"plugins": [
+						{
+							"name": "key-auth",
+							"config": {
+								"key_names": [
+									"api_key"
+								]
+							},
+							"tags": [
+								"OAS3_import"
+							]
+						}
+					]
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "updatePetWithForm",
+					"methods": [
+						"POST"
+					],
+					"paths": [
+						"/pet/(?<petId>[^/]+)$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "deletePet",
+					"methods": [
+						"DELETE"
+					],
+					"paths": [
+						"/pet/(?<petId>[^/]+)$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "uploadFile",
+					"methods": [
+						"POST"
+					],
+					"paths": [
+						"/pet/(?<petId>[^/]+)/uploadImage$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "getInventory",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/store/inventory$"
+					],
+					"strip_path": false,
+					"plugins": [
+						{
+							"name": "key-auth",
+							"config": {
+								"key_names": [
+									"api_key"
+								]
+							},
+							"tags": [
+								"OAS3_import"
+							]
+						}
+					]
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "placeOrder",
+					"methods": [
+						"POST"
+					],
+					"paths": [
+						"/store/order$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "getOrderById",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/store/order/(?<orderId>[^/]+)$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "deleteOrder",
+					"methods": [
+						"DELETE"
+					],
+					"paths": [
+						"/store/order/(?<orderId>[^/]+)$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "createUser",
+					"methods": [
+						"POST"
+					],
+					"paths": [
+						"/user$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "createUsersWithListInput",
+					"methods": [
+						"POST"
+					],
+					"paths": [
+						"/user/createWithList$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "loginUser",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/user/login$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "logoutUser",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/user/logout$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "getUserByName",
+					"methods": [
+						"GET"
+					],
+					"paths": [
+						"/user/(?<username>[^/]+)$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "updateUser",
+					"methods": [
+						"PUT"
+					],
+					"paths": [
+						"/user/(?<username>[^/]+)$"
+					],
+					"strip_path": false
+				},
+				{
+					"tags": [
+						"OAS3_import"
+					],
+					"name": "deleteUser",
+					"methods": [
+						"DELETE"
+					],
+					"paths": [
+						"/user/(?<username>[^/]+)$"
+					],
+					"strip_path": false
+				}
+			],
+			"tags": [
+				"OAS3_import"
+			]
+		}
+	]
+}
